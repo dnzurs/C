@@ -32,6 +32,7 @@
     <ProjectGuid>{C57561DC-31D8-4153-B545-1133F006AAF4}</ProjectGuid>
     <RootNamespace>C_Project</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <ProjectName>Training</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -79,10 +80,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\USER\Desktop\GitHub\C\inc;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)../../inc;$(IncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)../../src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\USER\Desktop\GitHub\c_programming\inc;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)../../inc;$(IncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)../../src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)../../inc;$(IncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)../../src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)../../inc;$(IncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)../../src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
