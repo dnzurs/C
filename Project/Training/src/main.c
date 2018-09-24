@@ -49,5 +49,6 @@ int main(void)
 {
 	printf("Welcome to New Project");
 
+	getch();
 	return 0;
 }
